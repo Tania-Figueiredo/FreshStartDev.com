@@ -58,7 +58,7 @@ h3 {
 
 p {
   text-align: center;
-  margin-top: 0;
+  margin-top: 10px;
   padding: 0 30px 40px;
   line-height: 1.6;
   transition: all 0.3s ease-in-out;
@@ -80,8 +80,9 @@ p {
   max-width: 200px;
   height: auto;
   display: block;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-right: auto;
 }
 .about-box p {
   margin-top: 0;
