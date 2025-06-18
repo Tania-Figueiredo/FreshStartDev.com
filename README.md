@@ -1,40 +1,41 @@
 # FreshStart Dev
 
-Welcome to **FreshStart Dev**, a personal website created by Tânia Figueiredo — a junior front-end developer based in Portugal 🇵🇹.
+Hi there! This is **FreshStart Dev**, my personal website where I showcase my projects and journey as a junior front-end developer based in Portugal 🇵🇹.
 
-## 🚧 Project Status
+## 🚀 Current Project Status
 
-This website is currently **under construction**.  
-Pages and features are being developed progressively as part of the [SheCodes Responsive Workshop](https://www.shecodes.io).
+The site is **complete and live**, but I’m continuously making improvements, adding new content, and optimizing things bit by bit to keep it getting better.
 
-## ✅ Pages Completed So Far
+## ✅ Available Pages
 
-- Landing page (Hero)
-- About page
+- Home (Landing)  
+- About Me  
+- Portfolio  
+- Contact
 
-## 🛠 Coming Soon
+## 🛠 Ongoing Improvements
 
-- Portfolio
-- Contact page
-- SEO and accessibility improvements
-- Final responsive testing and optimisation
+- Regular content updates  
+- SEO and accessibility enhancements  
+- Performance optimizations  
+- New projects and features planned for the future
 
 ## ⚙️ Technologies Used
 
 - HTML5  
-- CSS3 with Custom Properties (CSS Variables)  
+- CSS3 with CSS variables  
 - Bootstrap 5  
-- Google Fonts (Playfair Display & Poppins)  
+- Google Fonts: *Playfair Display* and *Poppins*  
 - Mobile-first responsive design
 
-## 🌐 Live Preview
+## 🌐 Check Out the Live Site
 
-👉 [Visit the website](https://freshstartdev.com)
+[https://freshstartdev.com](https://freshstartdev.com)
 
-## 💻 Repository
+## 💻 Source Code
 
-View the full code on GitHub:  
-🔗 [https://github.com/Tania-Figueiredo/FreshStartDev.com](https://github.com/Tania-Figueiredo/FreshStartDev.com)
+Feel free to explore the code on GitHub:  
+[FreshStart Dev on GitHub](https://github.com/Tania-Figueiredo/FreshStartDev.com)
 
 ## 🤍 Author
 
