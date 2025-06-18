@@ -72,7 +72,10 @@ p {
   transition: all 0.3s ease-in-out;
   padding: 1.8rem;
 }
-
+.photo {
+  border-radius: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .about-box p {
   margin-top: 0;
   padding: 0;
