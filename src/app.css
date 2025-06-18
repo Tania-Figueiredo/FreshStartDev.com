@@ -46,7 +46,7 @@ h1 {
 
 h2 {
   color: var(--secondary);
-  margin-bottom: 10px;
+  margin-bottom: 1.5rem; /* aumentei de 1rem para 1.5rem para mais espaço */
   padding: 0 20px;
   font-weight: 600;
 }
@@ -57,11 +57,9 @@ h3 {
 }
 
 p {
-  text-align: center;
   margin-top: 10px;
-  padding: 0 30px 40px;
+  padding: 0 30px 50px; /* aumentei padding-bottom de 40px para 50px */
   line-height: 1.6;
-  transition: all 0.3s ease-in-out;
 }
 
 .about-box {
@@ -74,6 +72,7 @@ p {
   transition: all 0.3s ease-in-out;
   padding: 1.8rem;
 }
+
 .photo {
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -81,9 +80,10 @@ p {
   height: auto;
   display: block;
   margin-left: auto;
-  margin-top: 25px;
   margin-right: auto;
+  margin-top: 35px; /* aumentei de 25px para 35px para mais espaçamento */
 }
+
 .about-box p {
   margin-top: 0;
   padding: 0;
@@ -235,6 +235,7 @@ footer a:hover {
     padding: 1rem 2.2rem;
   }
 }
+
 footer {
   margin-top: auto;
 }
