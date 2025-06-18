@@ -18,8 +18,7 @@ body {
 }
 
 header {
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
+  padding: 2rem 0 1.5rem;
   margin-bottom: 0;
 }
 
@@ -34,31 +33,29 @@ h3 {
   font-family: var(--heading-font);
   text-align: center;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
 }
 
 h1 {
   color: var(--primary);
   margin-top: 60px;
-  margin-bottom: 20px;
   padding: 0 20px;
   font-weight: 600;
 }
 
 h2 {
   color: var(--secondary);
-  margin-bottom: 1.5rem; /* aumentei de 1rem para 1.5rem para mais espaço */
   padding: 0 20px;
   font-weight: 600;
 }
 
 h3 {
   color: var(--primary);
-  margin-bottom: 20px;
 }
 
 p {
-  margin-top: 10px;
-  padding: 0 30px 50px; /* aumentei padding-bottom de 40px para 50px */
+  margin: 10px 0 50px;
+  padding: 0 30px;
   line-height: 1.6;
 }
 
@@ -69,8 +66,8 @@ p {
   box-shadow: var(--shadow);
   font-size: 1rem;
   line-height: 1.6;
-  transition: all 0.3s ease-in-out;
   padding: 1.8rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .photo {
@@ -78,10 +75,8 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 200px;
   height: auto;
+  margin: 35px auto 0;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 35px; /* aumentei de 25px para 35px para mais espaçamento */
 }
 
 .about-box p {
@@ -97,9 +92,11 @@ p {
   box-shadow: var(--shadow);
   margin-left: 10px;
 }
+
 .collapse.navbar-collapse {
   justify-content: flex-start !important;
 }
+
 .navbar-toggler {
   border: none;
   box-shadow: none;
@@ -123,7 +120,8 @@ img {
   display: block;
 }
 
-.btn {
+.btn,
+.btn-cv {
   font-size: 1.1rem;
   font-weight: 600;
   padding: 1rem 2.5rem;
@@ -131,28 +129,30 @@ img {
   box-shadow: var(--shadow);
   transition: all 0.3s ease-in-out;
   text-align: center;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .btn-primary {
   background-color: var(--primary);
   color: white;
-  border: none;
 }
 
 .btn-primary:hover {
   background-color: var(--secondary);
-  color: white;
 }
 
-.btn-secondary {
+.btn-secondary,
+.btn-cv {
   background-color: var(--secondary);
   color: white;
-  border: none;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-cv:hover {
   background-color: var(--primary);
-  color: white;
 }
 
 footer small {
@@ -163,6 +163,7 @@ footer small {
 footer a {
   color: var(--secondary);
   text-decoration: underline;
+  transition: color 0.3s ease-in-out;
 }
 
 footer a:hover {
@@ -186,8 +187,6 @@ footer a:hover {
 }
 
 .landing-btn {
-  background-color: var(--primary);
-  color: white;
   font-size: 1.5rem;
   font-weight: 600;
   padding: 1.2rem 3rem;
@@ -195,11 +194,13 @@ footer a:hover {
   border-radius: 10px;
   box-shadow: var(--shadow);
   transition: all 0.3s ease-in-out;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
 }
 
 .landing-btn:hover {
   background-color: var(--secondary);
-  color: white;
 }
 
 .landing-tagline {
@@ -208,6 +209,58 @@ footer a:hover {
   max-width: 600px;
   margin: 0 auto;
   font-family: var(--heading-font);
+}
+
+.project-box {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  padding: 1.5rem 2rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  color: var(--text);
+  font-family: var(--body-font);
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 320px;
+}
+
+.project-box:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.project-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.project-box strong {
+  font-weight: 900;
+  font-family: var(--heading-font);
+  color: var(--primary);
+}
+
+.project-box a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.project-box a:hover {
+  text-decoration: underline;
+  color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+  .project-box {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -228,7 +281,8 @@ footer a:hover {
     font-size: 0.95rem;
   }
 
-  .btn {
+  .btn,
+  .btn-cv {
     font-size: 1rem;
     padding: 0.9rem 2rem;
   }
@@ -241,14 +295,4 @@ footer a:hover {
 
 footer {
   margin-top: auto;
-}
-.project-box {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-box:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  transform: translateY(-5px);
 }
