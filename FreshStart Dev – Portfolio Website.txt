@@ -1,0 +1,29 @@
+Description:
+A professional website designed to showcase the personal brand of Tânia Figueiredo — Front-End Developer. It includes sections such as About, Portfolio with completed projects, a working contact form integrated with Netlify, and a design aligned with the brand’s visual identity.
+
+Live Website:
+https://freshstartdev.com/
+
+GitHub Repository:
+https://github.com/Tania-Figueiredo/FreshStartDev.com
+
+Completion Date:
+14/07/2025
+
+Technologies Used:
+- HTML5
+- CSS3 (with Bootstrap 5)
+- JavaScript
+- Netlify Forms
+- Google Fonts (Playfair Display & Poppins)
+- Bootstrap Icons
+
+Features:
+- Fully responsive and mobile-optimized
+- Functional contact form with Netlify integration and success page redirect
+- Custom design using the brand’s color palette
+- Social media links and project references
+- Modular structure and easy to update
+
+Notes:
+This website represents the digital presence of the FreshStart Dev brand and will be updated as new projects and skills are added. The design and content were entirely planned, written, and implemented by Tânia Figueiredo as part of her personal portfolio and career transition into tech.
