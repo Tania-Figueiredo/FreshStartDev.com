@@ -380,16 +380,29 @@ form[name="contact"] button[type="submit"]:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Toggle button */
+/* Toggle More Projects Button */
 #toggle-more {
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0.3rem 0.8rem;
+  box-shadow: none;
 }
 
 #toggle-more:hover {
-  background-color: var(--secondary);
-  color: #fff;
-  transform: translateY(-2px);
+  color: var(--primary);
+  text-decoration: none;
+  transform: none;
+}
+
+#toggle-more:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /* ============================================================
