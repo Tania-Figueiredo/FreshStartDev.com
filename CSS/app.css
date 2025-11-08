@@ -1,6 +1,11 @@
+
+/* ============================================================
+   1. ROOT VARIABLES
+============================================================ */
 :root {
   --body-font: "Poppins", sans-serif;
   --heading-font: "Playfair Display", serif;
+
   --primary: #ab94b4;
   --secondary: #c08087;
   --text: #2a2a2a;
@@ -9,6 +14,9 @@
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* ============================================================
+   2. BASE STYLES
+============================================================ */
 body {
   font-family: var(--body-font);
   background: var(--background);
@@ -17,9 +25,10 @@ body {
   padding: 0;
 }
 
-header {
-  padding: 2rem 0 1.5rem;
-  margin-bottom: 0;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 main.container {
@@ -27,6 +36,28 @@ main.container {
   margin-top: 0;
 }
 
+footer {
+  margin-top: auto;
+}
+
+footer small {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+footer a {
+  color: var(--secondary);
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: var(--primary);
+}
+
+/* ============================================================
+   3. TYPOGRAPHY
+============================================================ */
 h1,
 h2,
 h3 {
@@ -59,42 +90,14 @@ p {
   line-height: 1.6;
 }
 
-.about-box {
-  background-color: var(--primary);
-  color: white;
-  border: 3px solid var(--primary);
-  box-shadow: var(--shadow);
-  font-size: 1rem;
-  line-height: 1.6;
-  padding: 1.8rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.photo {
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 200px;
-  height: auto;
-  margin: 35px auto 0;
-  display: block;
-}
-
-.about-box p {
-  margin-top: 0;
-  padding: 0;
-  text-align: left;
-}
-
+/* ============================================================
+   4. NAVBAR
+============================================================ */
 .navbar {
   background-color: var(--navbar-bg);
-  font-family: var(--body-font) !important;
+  font-family: var(--body-font);
   padding: 0.5rem 0;
   box-shadow: var(--shadow);
-  margin-left: 10px;
-}
-
-.collapse.navbar-collapse {
-  justify-content: flex-start !important;
 }
 
 .navbar-toggler {
@@ -102,26 +105,22 @@ p {
   box-shadow: none;
 }
 
-.nav-link {
+.navbar-nav .nav-link {
   color: var(--text) !important;
   font-weight: 500;
   padding: 0.5rem 1rem;
   transition: color 0.3s ease-in-out;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
   color: var(--primary) !important;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.btn,
-.btn-cv {
+/* ============================================================
+   5. BUTTONS
+============================================================ */
+.btn {
   font-size: 1.1rem;
   font-weight: 600;
   padding: 1rem 2.5rem;
@@ -144,73 +143,30 @@ img {
   background-color: var(--secondary);
 }
 
-.btn-secondary,
-.btn-cv {
+.btn-secondary {
   background-color: var(--secondary);
   color: white;
 }
 
-.btn-secondary:hover,
-.btn-cv:hover {
+.btn-secondary:hover {
   background-color: var(--primary);
 }
 
-footer small {
-  font-size: 0.9rem;
-  color: #777;
+/* ============================================================
+   6. SECTIONS & COMPONENTS
+============================================================ */
+
+/* ABOUT */
+.photo {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  height: auto;
+  margin: 35px auto 0;
+  display: block;
 }
 
-footer a {
-  color: var(--secondary);
-  text-decoration: underline;
-  transition: color 0.3s ease-in-out;
-}
-
-footer a:hover {
-  color: var(--primary);
-}
-
-.landing-body {
-  display: flex;
-  flex-direction: column;
-  background: var(--background);
-  color: var(--text);
-  font-family: var(--body-font);
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
-
-.landing-logo {
-  width: 500px;
-  max-width: 80%;
-}
-
-.landing-btn {
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 1.2rem 3rem;
-  border: none;
-  border-radius: 10px;
-  box-shadow: var(--shadow);
-  transition: all 0.3s ease-in-out;
-  background-color: var(--primary);
-  color: white;
-  cursor: pointer;
-}
-
-.landing-btn:hover {
-  background-color: var(--secondary);
-}
-
-.landing-tagline {
-  font-size: 1.2rem;
-  color: var(--secondary);
-  max-width: 600px;
-  margin: 0 auto;
-  font-family: var(--heading-font);
-}
-
+/* PROJECT CARDS */
 .project-box {
   background-color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -257,6 +213,188 @@ footer a:hover {
   color: var(--secondary);
 }
 
+/* Scroll-to-top button */
+#scrollTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: var(--secondary);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 14px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+}
+
+#scrollTop.show {
+  display: block;
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* ============================================================
+   7. ANIMATIONS
+============================================================ */
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ============================================================
+   8. CONTACT FORM
+============================================================ */
+form[name="contact"] label {
+  font-weight: 500;
+  color: var(--text);
+}
+
+form[name="contact"] .form-control {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  padding: 10px 14px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+form[name="contact"] .form-control:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 0.2rem rgba(192, 128, 135, 0.25);
+  outline: none;
+}
+
+form[name="contact"] button[type="submit"] {
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+form[name="contact"] button[type="submit"]:hover {
+  background-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Success message */
+.form-success {
+  text-align: center;
+  background-color: var(--background);
+  border: 2px solid var(--secondary);
+  border-radius: 12px;
+  padding: 40px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  color: var(--text);
+  font-family: var(--body-font);
+}
+
+.form-success i {
+  font-size: 3rem;
+  color: var(--secondary);
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ============================================================
+   9. LANDING PAGE
+============================================================ */
+.landing-body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--body-font);
+}
+
+.landing-logo {
+  width: 200px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.landing-tagline {
+  font-size: 1.2rem;
+  font-family: var(--heading-font);
+  color: var(--secondary);
+  max-width: 500px;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards 0.6s;
+}
+
+.landing-btn {
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 1.2s;
+}
+
+.landing-btn:hover {
+  background-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================================
+   10. PORTFOLIO
+============================================================ */
+.project-box img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Toggle button */
+#toggle-more {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+#toggle-more:hover {
+  background-color: var(--secondary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   11. RESPONSIVE ADJUSTMENTS
+============================================================ */
 @media (max-width: 768px) {
   .project-box {
     max-width: 90%;
@@ -276,13 +414,7 @@ footer a:hover {
     padding: 0 20px 30px;
   }
 
-  .about-box {
-    padding: 1.5rem;
-    font-size: 0.95rem;
-  }
-
-  .btn,
-  .btn-cv {
+  .btn {
     font-size: 1rem;
     padding: 0.9rem 2rem;
   }
@@ -291,15 +423,4 @@ footer a:hover {
     font-size: 1.2rem;
     padding: 1rem 2.2rem;
   }
-}
-
-footer {
-  margin-top: auto;
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 180px;
 }

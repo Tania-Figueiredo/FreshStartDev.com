@@ -3,62 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FreshStart Dev | Web Design for Entrepreneurs</title>
+    <title>FreshStart Dev · Portfolio of Tânia Figueiredo</title>
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <meta
       name="description"
-      content="FreshStart Dev helps entrepreneurs grow online with clear, elegant and strategic web design. Visit our portfolio and get in touch."
+      content="Portfolio of Tânia Figueiredo — Front-End Developer & Product Builder. FreshStart Dev showcases clean, human-centred web design for entrepreneurs and creators."
     />
     <meta name="author" content="Tânia Figueiredo" />
     <link href="css/app.css" rel="stylesheet" />
   </head>
 
-  <body class="landing-body">
-    <div
-      class="container text-center d-flex flex-column align-items-center justify-content-center min-vh-100"
+  <body class="landing-body d-flex flex-column justify-content-between min-vh-100">
+    <main
+      class="container text-center d-flex flex-column align-items-center justify-content-center flex-grow-1 fade-in"
     >
       <img
         src="images/logo.png"
-        alt="FreshStart Dev Logo"
+        alt="FreshStart Dev logo"
         class="landing-logo mb-4"
       />
-      <p class="landing-tagline mb-5">
-        Helping entrepreneurs grow online with clear, elegant web design.
-      </p>
-      <a href="/about.html" class="btn btn-primary landing-btn">Enter site</a>
-    </div>
 
-    <footer class="text-center py-3 mt-4">
-      <small
-        >© 2025 FreshStart Dev · This project was coded and designed by
-        <strong>Tânia Figueiredo</strong>, is
+      <h1 class="visually-hidden">FreshStart Dev — Portfolio of Tânia Figueiredo</h1>
+
+      <p class="landing-tagline mb-5">
+        Building clear, elegant and purposeful digital experiences.
+      </p>
+
+      <a href="about.html" class="btn btn-primary landing-btn">Enter Portfolio</a>
+    </main>
+
+    <footer class="text-center py-3 mt-auto fade-in">
+      <small>
+        © 2025 FreshStart Dev · Designed and coded by <strong>Tânia Figueiredo</strong> · 
         <a
           href="https://github.com/Tania-Figueiredo/FreshStartDev.com"
           target="_blank"
           rel="noopener noreferrer"
-          lang="en"
-          >open-sourced on GitHub</a
+          >Open-source on GitHub</a
         >
-        and
+        · 
         <a
           href="https://freshstartdev.com"
           target="_blank"
           rel="noopener noreferrer"
-          lang="en"
-          >hosted on Netlify</a
-        >.
+          >Hosted on Netlify</a
+        >
       </small>
     </footer>
+
+    <!-- Bootstrap Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main JS -->
+    <script src="index.js"></script>
   </body>
 </html>

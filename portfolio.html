@@ -3,31 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio · Tânia Figueiredo</title>
 
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <meta
       name="description"
-      content="Portfolio of Tânia Figueiredo, a Front-End Developer based in Portugal. Projects built with HTML, CSS, JavaScript, and Bootstrap."
+      content="Portfolio of Tânia Figueiredo — Front-End Developer & Product Builder based in Portugal. Professional work on RaceCrew AI and personal projects like FreshStart Dev and React apps."
     />
     <meta name="author" content="Tânia Figueiredo" />
     <link href="css/app.css" rel="stylesheet" />
   </head>
+
   <body>
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md shadow-sm">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" alt="FreshStart Dev logo" width="150" />
         </a>
         <button
@@ -42,235 +46,213 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavLight">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="/index.html">Homepage</a>
+              <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <h1>Portfolio</h1>
+    <!-- HERO -->
+    <header class="text-center py-5 fade-in">
+      <h1 class="mb-3">Portfolio</h1>
+      <p class="lead">
+        A selection of projects that reflect my evolution — from learning
+        front-end foundations to building real digital products for teams and clients.
+      </p>
+    </header>
 
-    <section class="projects mb-5">
-      <div class="row g-4 justify-content-center align-items-stretch">
-        <!-- Weather App -->
-        <div class="col-12 col-md-5 d-flex">
-          <div class="p-3 border rounded w-100 project-box">
-            <h2>Weather App (Vanilla JS)</h2>
-            <p>
-              A responsive web application that enables users to check real-time
-              weather conditions for any city. Built with HTML, CSS, and
-              JavaScript, it integrates an external API to display temperature,
-              wind speed, humidity, and detailed weather descriptions.
-            </p>
-            <p>
-              Launch
-              <a
-                href="https://shecodesplusapp1.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Launch Weather App"
-                >Weather App</a
-              >
-            </p>
-            <p>
-              View Code on
-              <a
-                href="https://github.com/Tania-Figueiredo/SheCodes"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="View Weather App code on GitHub"
-                >GitHub</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="col-12 col-md-5 d-flex">
-          <div class="p-3 border rounded w-100 project-box">
+    <main class="container my-5">
+      <!-- ======================
+           PROFESSIONAL PROJECTS
+      ====================== -->
+      <section class="mb-5 fade-in">
+        <h2 class="mb-4">Professional Work</h2>
+
+        <!-- RaceCrew AI Website -->
+        <article class="row align-items-center mb-5">
+          <div class="col-md-6">
             <img
-              src="images/Weatherapp.png"
-              class="img-fluid rounded shadow-sm"
-              alt="Weather app screenshot"
+              src="images/racecrewai-website.png"
+              class="img-fluid rounded shadow-sm mb-3"
+              alt="RaceCrew AI Website Screenshot"
               loading="lazy"
             />
           </div>
-        </div>
+          <div class="col-md-6">
+            <h3>RaceCrew AI — Website</h3>
+            <p>
+              WordPress-based platform for a motorsport analytics startup. I developed the front-end,
+              improved UI consistency, and built custom membership logic using PHP, UMP, and FluentCRM.
+            </p>
+            <p><strong>Technologies:</strong> HTML, SCSS, PHP, WordPress, JavaScript, CRM automation</p>
+            <a href="https://racecrewai.com" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+              Visit Website
+            </a>
+          </div>
+        </article>
 
-        <!-- World Clock -->
-        <div class="col-12 col-md-5 d-flex">
-          <div class="p-3 border rounded w-100 project-box">
+        <!-- RaceCrew AI App -->
+        <article class="row align-items-center mb-5 flex-md-row-reverse">
+          <div class="col-md-6">
             <img
-              src="images/WorldClock.png"
-              class="img-fluid rounded shadow-sm"
-              alt="World Clock app screenshot"
+              src="images/racecrewai-app.png"
+              class="img-fluid rounded shadow-sm mb-3"
+              alt="RaceCrew AI App Screenshot"
               loading="lazy"
             />
           </div>
-        </div>
-        <div class="col-12 col-md-5 d-flex">
-          <div class="p-3 border rounded w-100 project-box">
-            <h2>World Clock</h2>
+          <div class="col-md-6">
+            <h3>RaceCrew AI — Desktop App</h3>
             <p>
-              A live clock that displays the current time and date across
-              multiple cities worldwide, using Moment.js and Moment Timezone
-              libraries to provide accurate timezone calculations and real-time
-              updates. Built with HTML, CSS, and JavaScript for a smooth,
-              responsive user experience.
+              Cross-platform app built with Angular and Electron for telemetry, driver ranking, and setup management.
+              I contributed to UI/UX, front-end architecture, and data visualization (Chart.js).
             </p>
-            <p>
-              Launch
-              <a
-                href="https://plusaddonworldclockproject.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Launch World Clock App"
-                >World Clock App</a
-              >
-            </p>
-            <p>
-              View Code on
-              <a
-                href="https://github.com/Tania-Figueiredo/World-Clock-Project"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="View World Clock code on GitHub"
-                >GitHub</a
-              >
-            </p>
+            <p><strong>Technologies:</strong> Angular, Electron, TypeScript, Chart.js, Tailwind</p>
           </div>
-        </div>
+        </article>
 
-        <!-- React Weather App -->
-        <div class="col-12 col-md-5 d-flex">
-          <div class="p-3 border rounded w-100 project-box">
-            <h2>React Weather App</h2>
-            <p>
-              A weather application developed with React. Fetches real-time
-              weather data using a weather API and displays it with a clean UI,
-              loading state, and responsive design.
-            </p>
-            <p>
-              Launch
-              <a
-                href="https://reactweatherappfreshstartdev.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Launch React Weather App"
-                >React Weather App</a
-              >
-            </p>
-            <p>
-              View Code on
-              <a
-                href="https://github.com/Tania-Figueiredo/weatherapp-react"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="View React Weather App code on GitHub"
-                >GitHub</a
-              >
-            </p>
+        <!-- FreshStart Dev -->
+        <article class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <img
+              src="images/freshstartdev-site.png"
+              class="img-fluid rounded shadow-sm mb-3"
+              alt="FreshStart Dev Website Screenshot"
+              loading="lazy"
+            />
           </div>
-        </div>
-        <div class="col-12 col-md-5 d-flex">
-          <div class="p-3 border rounded w-100 project-box">
+          <div class="col-md-6">
+            <h3>FreshStart Dev — Portfolio Website</h3>
+            <p>
+              A personal brand and product built from scratch to showcase my skills in design, structure, and storytelling.
+              Created to demonstrate my ability to build meaningful digital experiences end-to-end.
+            </p>
+            <p><strong>Technologies:</strong> HTML, CSS, JS, Bootstrap, Netlify</p>
+            <a href="https://freshstartdev.com" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+              Visit Website
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- ======================
+           LEARNING PROJECTS
+      ====================== -->
+      <section class="fade-in">
+        <h2 class="mb-4">Learning & Practice Projects</h2>
+
+        <article class="row align-items-center mb-5">
+          <div class="col-md-6">
             <img
               src="images/react-weather.png"
-              class="img-fluid rounded shadow-sm"
-              alt="React Weather App screenshot"
-              loading="lazy"
+              class="img-fluid rounded shadow-sm mb-3"
+              alt="React Weather App"
             />
           </div>
-        </div>
+          <div class="col-md-6">
+            <h3>React Weather App</h3>
+            <p>
+              Real-time weather dashboard using React and OpenWeather API.
+              Focused on state management, UX and responsive UI.
+            </p>
+            <a href="https://reactweatherappfreshstartdev.netlify.app/" target="_blank" class="btn btn-sm btn-primary">Launch</a>
+            <a href="https://github.com/Tania-Figueiredo/weatherapp-react" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+          </div>
+        </article>
 
-        <!-- React Dictionary App -->
-        <div class="col-12 col-md-5 d-flex">
-          <div class="p-3 border rounded w-100 project-box">
+        <article class="row align-items-center mb-5 flex-md-row-reverse">
+          <div class="col-md-6">
             <img
               src="images/react-dictionary.png"
-              class="img-fluid rounded shadow-sm"
-              alt="React Dictionary App screenshot"
-              loading="lazy"
+              class="img-fluid rounded shadow-sm mb-3"
+              alt="React Dictionary App"
             />
           </div>
-        </div>
-        <div class="col-12 col-md-5 d-flex">
-          <div class="p-3 border rounded w-100 project-box">
-            <h2>React Dictionary App</h2>
+          <div class="col-md-6">
+            <h3>React Dictionary App</h3>
             <p>
-              A dictionary app built in React using the DictionaryAPI and Pexels
-              API. Includes word definitions, phonetics, parts of speech,
-              synonyms, and related imagery. Semantic and responsive UI.
+              A React-based dictionary app using the DictionaryAPI and Pexels API to display
+              definitions, phonetics, and related imagery.
             </p>
-            <p>
-              Launch
-              <a
-                href="https://reactaddondictionary.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Launch React Dictionary App"
-                >React Dictionary App</a
-              >
-            </p>
-            <p>
-              View Code on
-              <a
-                href="https://github.com/Tania-Figueiredo/dictionary-react-project"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="View React Dictionary App code on GitHub"
-                >GitHub</a
-              >
-            </p>
+            <a href="https://reactaddondictionary.netlify.app/" target="_blank" class="btn btn-sm btn-primary">Launch</a>
+            <a href="https://github.com/Tania-Figueiredo/dictionary-react-project" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
           </div>
+        </article>
+
+        <!-- Collapsible Section -->
+        <div id="more-projects" class="collapse fade">
+          <article class="row align-items-center mb-5">
+            <div class="col-md-6">
+              <img
+                src="images/WorldClock.png"
+                class="img-fluid rounded shadow-sm mb-3"
+                alt="World Clock App"
+              />
+            </div>
+            <div class="col-md-6">
+              <h3>World Clock App</h3>
+              <p>
+                Displays live time zones using Moment.js. Created to practice
+                real-time JavaScript and responsive layouts.
+              </p>
+              <a href="https://plusaddonworldclockproject.netlify.app/" target="_blank" class="btn btn-sm btn-primary">Launch</a>
+              <a href="https://github.com/Tania-Figueiredo/World-Clock-Project" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </article>
+
+          <article class="row align-items-center mb-5 flex-md-row-reverse">
+            <div class="col-md-6">
+              <img
+                src="images/Weatherapp.png"
+                class="img-fluid rounded shadow-sm mb-3"
+                alt="Vanilla JS Weather App"
+              />
+            </div>
+            <div class="col-md-6">
+              <h3>Weather App (Vanilla JS)</h3>
+              <p>
+                Early project built with pure JavaScript, fetching live weather data from an API.
+                The foundation of my journey into front-end development.
+              </p>
+              <a href="https://shecodesplusapp1.netlify.app/" target="_blank" class="btn btn-sm btn-primary">Launch</a>
+              <a href="https://github.com/Tania-Figueiredo/SheCodes" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
+            </div>
+          </article>
         </div>
+
+        <div class="text-center mt-4">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#more-projects"
+            aria-expanded="false"
+            aria-controls="more-projects"
+            id="toggle-more"
+          >
+            Show More Projects ↓
+          </button>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <div class="text-center mt-5 fade-in">
+        <a href="docs/Tania_Figueiredo_CV.pdf" target="_blank" class="btn btn-secondary me-2">Download CV</a>
+        <a href="contact.html" class="btn btn-primary">Get in touch</a>
       </div>
-    </section>
+    </main>
 
-    <div class="d-flex justify-content-center gap-3 my-4">
-      <a
-        href="docs/Tania_Figueiredo_CV.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn btn-secondary"
-      >
-        Download CV
-      </a>
-
-      <a href="/contact.html" class="btn btn-primary"> Contacts </a>
-    </div>
-
-    <footer class="text-center py-4 mt-auto">
-      <div class="container">
-        <small>
-          © 2025 FreshStart Dev ·
-          <a href="/terms-and-conditions.html">Terms & Conditions</a> ·
-          <a href="/privacy-policy.html">Privacy Policy</a>
-        </small>
-      </div>
+    <footer class="text-center py-4 mt-auto fade-in">
+      <small>© 2025 Tânia Figueiredo · FreshStart Dev Portfolio</small>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>

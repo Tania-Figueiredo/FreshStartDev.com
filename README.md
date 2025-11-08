@@ -1,43 +1,81 @@
-# FreshStart Dev
+#  FreshStart Dev
 
-Hi there! This is **FreshStart Dev**, my personal website where I showcase my projects and journey as a junior front-end developer based in Portugal 🇵🇹.
+Welcome to **FreshStart Dev** — my personal space on the web.  
+It’s where I share my projects, learning journey, and the path I’m building as a **Front-End Developer & Product Builder** based in Portugal 🇵🇹.
 
-## 🚀 Current Project Status
+---
 
-The site is **complete and live**, but I’m continuously making improvements, adding new content, and optimizing things bit by bit to keep it getting better.
+##  Project Overview
 
-## ✅ Available Pages
+**FreshStart Dev** isn’t just a portfolio — it’s a product I designed, coded, and deployed to reflect how I work and grow.  
+The site is fully live and functional, but constantly evolving as I improve design, structure, and user experience over time.
 
-- Home (Landing)  
-- About Me  
-- Portfolio  
-- Contact
+---
 
-## 🛠 Ongoing Improvements
+## Pages & Structure
 
-- Regular content updates  
-- SEO and accessibility enhancements  
-- Performance optimizations  
-- New projects and features planned for the future
+-  **Home:** minimalist landing page introducing the project  
+-  **About:** my story, mindset, and approach to building digital products  
+-  **Portfolio:** professional and personal projects  
+-  **Contact:** simple Netlify form with direct links to my social platforms  
 
-## ⚙️ Technologies Used
+---
 
-- HTML5  
-- CSS3 with CSS variables  
-- Bootstrap 5  
-- Google Fonts: *Playfair Display* and *Poppins*  
-- Mobile-first responsive design
+##  Continuous Improvements
 
-## 🌐 Check Out the Live Site
+-  Frequent content and layout updates  
+-  SEO and accessibility refinements  
+-  Performance tuning for faster load times  
+-  Adding new sections and case studies (next: RaceCrew AI & Sorika App)
 
-[https://freshstartdev.com](https://freshstartdev.com)
+---
 
-## 💻 Source Code
+##  Tech Stack
 
-Feel free to explore the code on GitHub:  
-[FreshStart Dev on GitHub](https://github.com/Tania-Figueiredo/FreshStartDev.com)
+- **HTML5** — semantic and accessible structure  
+- **CSS3 + Variables** — custom color system & responsive layouts  
+- **Bootstrap 5** — grid and components for consistent UI  
+- **Google Fonts:** [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) & [Poppins](https://fonts.google.com/specimen/Poppins)  
+- **Netlify** — deployment and form handling  
+- **Mobile-first** design, tested across devices  
 
-## 🤍 Author
+---
 
-Created with care by [Tânia Figueiredo](https://www.linkedin.com/in/taniafigueired0)  
-Part of the SheCodes learning journey.
+##  Live Website
+
+ [**freshstartdev.com**](https://freshstartdev.com)
+
+A living project — designed to grow as I do.
+
+---
+
+##  Source Code
+
+📂 [**View on GitHub**](https://github.com/Tania-Figueiredo/FreshStartDev.com)
+
+Clean, organized, and open-source — feel free to explore or draw inspiration.
+
+---
+
+## Author
+
+Built and maintained with care by [**Tânia Figueiredo**](https://www.linkedin.com/in/taniafigueired0)  
+**Frontend Developer · Product Builder · Lifelong Learner**
+
+Part of my journey from *SheCodes student* to *building real-world digital products.*
+
+---
+
+##  Preview
+
+![FreshStart Dev Screenshot](images/freshstartdev-site.png)
+
+---
+
+###  License
+
+This project is open-sourced under the [MIT License](https://opensource.org/licenses/MIT).
+
+---
+
+> _“Keep building. The best way to learn is by creating.”_ — Tânia Figueiredo
